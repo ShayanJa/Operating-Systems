@@ -1,0 +1,26 @@
+/*CSci4061 F2015 Assignment 4
+* name: Shayan Talebi, Ankit Nayak
+* id: taleb007, nayak015*/
+
+We have implementated the extra credit. We used the PA3 implementation in our code. 
+This is a client server implementation of PA3. The client will ask the server to
+process city name requests. The server will contain the database of 3 most used
+words in a city. The client will ask the server for these, will recieve them 
+and create a clientX.in.result file
+
+Steps to run:
+make
+
+On server terminal:
+./twitterTrend_server port_number num_threads
+EXAMPLE: ./twitterTrend_server 4036
+
+On client terminal:
+./twitterTrend_client server_host_name server_port_number file_path
+EXAMPLE: ./twitterTrend_client lind40-20.cselabs.umn.edu 4036 ../client1.in
+
+OR FOR MULTIPLE CLIENTS
+//You can use multiple client.in files on a server request
+
+./twitterTrend_client server_host_name server_port_number file_path1 file_path2 file_path3 .....
+EXAMPLE: ./twitterTrend_client lind40-20.cselabs.umn.edu 4036 ../client1.in ../client2.in
